@@ -1,10 +1,13 @@
 # pixel-match-api
 
+The pixel-match-api returns the match rate of two given images.
+
+## Source Code and Resource Overview
+
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
 - pixel-match - Code for the application's Lambda function written in TypeScript.
 - events - Invocation events that you can use to invoke the function.
-- pixel-match/tests - Unit tests for the application code.
 - template.yaml - A template that defines the application's AWS resources.
 
 The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
@@ -102,16 +105,6 @@ pixel-match-api$ sam logs -n PixelMatchFunction --stack-name pixel-match-api --t
 ```
 
 You can find more information and examples about filtering Lambda function logs in the [SAM CLI Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-logging.html).
-
-## Unit tests
-
-Tests are defined in the `pixel-match/tests` folder in this project. Use NPM to install the [Jest test framework](https://jestjs.io/) and run unit tests.
-
-```bash
-pixel-match-api$ cdpixel-match
-pixel-match$ npm install
-pixel-match$ npm run test
-```
 
 ## Cleanup
 
